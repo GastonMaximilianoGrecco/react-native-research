@@ -1,0 +1,97 @@
+{
+  "buildFiles": [
+    "/Users/ggrecco/Desktop/ReactNativeCLI/CLIproject/node_modules/@react-native-async-storage/async-storage/android/build/generated/source/codegen/jni/CMakeLists.txt",
+    "/Users/ggrecco/Desktop/ReactNativeCLI/CLIproject/node_modules/@react-native-google-signin/google-signin/android/build/generated/source/codegen/jni/CMakeLists.txt",
+    "/Users/ggrecco/Desktop/ReactNativeCLI/CLIproject/node_modules/@react-native-picker/picker/android/src/main/jni/CMakeLists.txt",
+    "/Users/ggrecco/Desktop/ReactNativeCLI/CLIproject/node_modules/react-native-image-picker/android/build/generated/source/codegen/jni/CMakeLists.txt",
+    "/Users/ggrecco/Desktop/ReactNativeCLI/CLIproject/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt",
+    "/Users/ggrecco/Desktop/ReactNativeCLI/CLIproject/node_modules/react-native-svg/android/src/main/jni/CMakeLists.txt",
+    "/Users/ggrecco/Desktop/ReactNativeCLI/CLIproject/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/CMakeLists.txt",
+    "/Users/ggrecco/Desktop/ReactNativeCLI/CLIproject/node_modules/react-native-webview/android/build/generated/source/codegen/jni/CMakeLists.txt",
+    "/Users/ggrecco/Desktop/ReactNativeCLI/CLIproject/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/ggrecco/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/Users/ggrecco/Desktop/ReactNativeCLI/CLIproject/android/app/.cxx/Debug/1f53595f/arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/ggrecco/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/Users/ggrecco/Desktop/ReactNativeCLI/CLIproject/android/app/.cxx/Debug/1f53595f/arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "react_codegen_RNVectorIconsSpec::@479809fae146501fd34d": {
+      "artifactName": "react_codegen_RNVectorIconsSpec",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "react_codegen_safeareacontext::@7984cd80db47aa7b952a": {
+      "artifactName": "react_codegen_safeareacontext",
+      "abi": "arm64-v8a",
+      "output": "/Users/ggrecco/Desktop/ReactNativeCLI/CLIproject/android/app/build/intermediates/cxx/Debug/1f53595f/obj/arm64-v8a/libreact_codegen_safeareacontext.so",
+      "runtimeFiles": [
+        "/Users/ggrecco/.gradle/caches/8.14.3/transforms/b3c4cc060b2a275f08921f32f4cac13e/transformed/fbjni-0.7.0/prefab/modules/fbjni/libs/android.arm64-v8a/libfbjni.so",
+        "/Users/ggrecco/.gradle/caches/8.14.3/transforms/879da7bfb9444fea821ffebabfd5623d/transformed/react-android-0.81.0-debug/prefab/modules/jsi/libs/android.arm64-v8a/libjsi.so",
+        "/Users/ggrecco/.gradle/caches/8.14.3/transforms/879da7bfb9444fea821ffebabfd5623d/transformed/react-android-0.81.0-debug/prefab/modules/reactnative/libs/android.arm64-v8a/libreactnative.so"
+      ]
+    },
+    "react_codegen_RNCWebViewSpec::@eb48929f9f7453740a6c": {
+      "artifactName": "react_codegen_RNCWebViewSpec",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "react_codegen_RNImagePickerSpec::@f66ee9a2efecfb28bee4": {
+      "artifactName": "react_codegen_RNImagePickerSpec",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "appmodules::@6890427a1f51a3e7e1df": {
+      "artifactName": "appmodules",
+      "abi": "arm64-v8a",
+      "output": "/Users/ggrecco/Desktop/ReactNativeCLI/CLIproject/android/app/build/intermediates/cxx/Debug/1f53595f/obj/arm64-v8a/libappmodules.so",
+      "runtimeFiles": [
+        "/Users/ggrecco/Desktop/ReactNativeCLI/CLIproject/android/app/build/intermediates/cxx/Debug/1f53595f/obj/arm64-v8a/libreact_codegen_rnpicker.so",
+        "/Users/ggrecco/Desktop/ReactNativeCLI/CLIproject/android/app/build/intermediates/cxx/Debug/1f53595f/obj/arm64-v8a/libreact_codegen_safeareacontext.so",
+        "/Users/ggrecco/Desktop/ReactNativeCLI/CLIproject/android/app/build/intermediates/cxx/Debug/1f53595f/obj/arm64-v8a/libreact_codegen_rnsvg.so",
+        "/Users/ggrecco/.gradle/caches/8.14.3/transforms/b3c4cc060b2a275f08921f32f4cac13e/transformed/fbjni-0.7.0/prefab/modules/fbjni/libs/android.arm64-v8a/libfbjni.so",
+        "/Users/ggrecco/.gradle/caches/8.14.3/transforms/879da7bfb9444fea821ffebabfd5623d/transformed/react-android-0.81.0-debug/prefab/modules/jsi/libs/android.arm64-v8a/libjsi.so",
+        "/Users/ggrecco/.gradle/caches/8.14.3/transforms/879da7bfb9444fea821ffebabfd5623d/transformed/react-android-0.81.0-debug/prefab/modules/reactnative/libs/android.arm64-v8a/libreactnative.so"
+      ]
+    },
+    "react_codegen_rnsvg::@4f40eb209d0c0b4a3b65": {
+      "artifactName": "react_codegen_rnsvg",
+      "abi": "arm64-v8a",
+      "output": "/Users/ggrecco/Desktop/ReactNativeCLI/CLIproject/android/app/build/intermediates/cxx/Debug/1f53595f/obj/arm64-v8a/libreact_codegen_rnsvg.so",
+      "runtimeFiles": [
+        "/Users/ggrecco/.gradle/caches/8.14.3/transforms/879da7bfb9444fea821ffebabfd5623d/transformed/react-android-0.81.0-debug/prefab/modules/reactnative/libs/android.arm64-v8a/libreactnative.so",
+        "/Users/ggrecco/.gradle/caches/8.14.3/transforms/879da7bfb9444fea821ffebabfd5623d/transformed/react-android-0.81.0-debug/prefab/modules/jsi/libs/android.arm64-v8a/libjsi.so",
+        "/Users/ggrecco/.gradle/caches/8.14.3/transforms/b3c4cc060b2a275f08921f32f4cac13e/transformed/fbjni-0.7.0/prefab/modules/fbjni/libs/android.arm64-v8a/libfbjni.so"
+      ]
+    },
+    "react_codegen_RNGoogleSignInCGen::@337b7b353bd94a4215c0": {
+      "artifactName": "react_codegen_RNGoogleSignInCGen",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "react_codegen_rnasyncstorage::@1596841e19ec5b9eeffe": {
+      "artifactName": "react_codegen_rnasyncstorage",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "react_codegen_rnpicker::@e8bb2e9e833f47d0d516": {
+      "artifactName": "react_codegen_rnpicker",
+      "abi": "arm64-v8a",
+      "output": "/Users/ggrecco/Desktop/ReactNativeCLI/CLIproject/android/app/build/intermediates/cxx/Debug/1f53595f/obj/arm64-v8a/libreact_codegen_rnpicker.so",
+      "runtimeFiles": [
+        "/Users/ggrecco/.gradle/caches/8.14.3/transforms/879da7bfb9444fea821ffebabfd5623d/transformed/react-android-0.81.0-debug/prefab/modules/reactnative/libs/android.arm64-v8a/libreactnative.so",
+        "/Users/ggrecco/.gradle/caches/8.14.3/transforms/879da7bfb9444fea821ffebabfd5623d/transformed/react-android-0.81.0-debug/prefab/modules/jsi/libs/android.arm64-v8a/libjsi.so",
+        "/Users/ggrecco/.gradle/caches/8.14.3/transforms/b3c4cc060b2a275f08921f32f4cac13e/transformed/fbjni-0.7.0/prefab/modules/fbjni/libs/android.arm64-v8a/libfbjni.so"
+      ]
+    }
+  }
+}

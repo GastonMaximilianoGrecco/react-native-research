@@ -1,0 +1,4 @@
+/Users/ggrecco/Desktop/ReactNativeCLI/CLIproject/android/app/.cxx/Debug/1f53595f/armeabi-v7a/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir
+/Users/ggrecco/Desktop/ReactNativeCLI/CLIproject/android/app/.cxx/Debug/1f53595f/armeabi-v7a/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir
+/Users/ggrecco/Desktop/ReactNativeCLI/CLIproject/android/app/.cxx/Debug/1f53595f/armeabi-v7a/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/edit_cache.dir
+/Users/ggrecco/Desktop/ReactNativeCLI/CLIproject/android/app/.cxx/Debug/1f53595f/armeabi-v7a/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/rebuild_cache.dir

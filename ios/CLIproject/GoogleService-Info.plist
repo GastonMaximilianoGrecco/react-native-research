@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>123456789000-abcdefghijklmnopqrstuvwxyz.apps.googleusercontent.com</string>
+	<string>996924395909-b617g4tubvadavt0fs7pttou61d1qlmm.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.123456789000-abcdefghijklmnopqrstuvwxyz</string>
+	<string>com.googleusercontent.apps.996924395909-b617g4tubvadavt0fs7pttou61d1qlmm</string>
 	<key>API_KEY</key>
 	<string>AIzaSyC-TU_API_KEY_AQUI</string>
 	<key>GCM_SENDER_ID</key>
-	<string>123456789000</string>
+	<string>996924395909</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.cliproject</string>
 	<key>PROJECT_ID</key>
-	<string>tu-proyecto-firebase</string>
+	<string>appsheet-react-native</string>
 	<key>STORAGE_BUCKET</key>
-	<string>tu-proyecto-firebase.appspot.com</string>
+	<string>appsheet-react-native.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:123456789000:ios:abcdef123456789</string>
+	<string>1:996924395909:ios:b617g4tubvadavt0fs7pttou61d1qlmm</string>
 	<key>DATABASE_URL</key>
-	<string>https://tu-proyecto-firebase.firebaseio.com</string>
+	<string>https://appsheet-react-native.firebaseio.com</string>
 </dict>
 </plist>

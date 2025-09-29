@@ -1,20 +1,20 @@
 {
   "project_info": {
-    "project_number": "123456789000",
-    "project_id": "tu-proyecto-firebase",
-    "storage_bucket": "tu-proyecto-firebase.appspot.com"
+    "project_number": "996924395909",
+    "project_id": "appsheet-react-native",
+    "storage_bucket": "appsheet-react-native.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:123456789000:android:abcdef123456789",
+        "mobilesdk_app_id": "1:996924395909:android:b617g4tubvadavt0fs7pttou61d1qlmm",
         "android_client_info": {
           "package_name": "com.cliproject"
         }
       },
       "oauth_client": [
         {
-          "client_id": "123456789000-abcdefghijklmnopqrstuvwxyz.apps.googleusercontent.com",
+          "client_id": "996924395909-android123.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.cliproject",
@@ -22,7 +22,7 @@
           }
         },
         {
-          "client_id": "123456789000-webClientId.apps.googleusercontent.com",
+          "client_id": "996924395909-b617g4tubvadavt0fs7pttou61d1qlmm.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -35,7 +35,7 @@
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "123456789000-webClientId.apps.googleusercontent.com",
+              "client_id": "996924395909-b617g4tubvadavt0fs7pttou61d1qlmm.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

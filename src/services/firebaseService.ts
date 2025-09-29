@@ -1,11 +1,12 @@
-import firestore from '@react-native-firebase/firestore';
-import auth from '@react-native-firebase/auth';
-import { GoogleSignin } from '@react-native-google-signin/google-signin';
+import firestore from "@react-native-firebase/firestore";
+import auth from "@react-native-firebase/auth";
+import { GoogleSignin } from "@react-native-google-signin/google-signin";
 
 // Configuración de Google Sign-In
 export const configureGoogleSignIn = () => {
   GoogleSignin.configure({
-    webClientId: '123456789000-webClientId.apps.googleusercontent.com', // TEMPORAL - Reemplaza con tu Web Client ID real
+    webClientId:
+      "996924395909-b617g4tubvadavt0fs7pttou61d1qlmm.apps.googleusercontent.com", // Client ID real de AppSheet
     offlineAccess: true,
   });
 };
@@ -30,7 +31,7 @@ export const signInWithGoogle = async () => {
 
     return userCredential.user;
   } catch (error) {
-    console.error('Error al iniciar sesión con Google:', error);
+    console.error("Error al iniciar sesión con Google:", error);
     throw error;
   }
 };
@@ -41,7 +42,7 @@ export const signOut = async () => {
     await GoogleSignin.signOut();
     await auth().signOut();
   } catch (error) {
-    console.error('Error al cerrar sesión:', error);
+    console.error("Error al cerrar sesión:", error);
     throw error;
   }
 };
@@ -54,12 +55,12 @@ export const getCurrentUser = () => {
 // Función para guardar un reporte de incidente en Firestore
 export const saveIncidentReport = async (
   reportData: any,
-  syncToSheets: boolean = false,
+  syncToSheets: boolean = false
 ) => {
   try {
     const user = getCurrentUser();
     if (!user) {
-      throw new Error('Usuario no autenticado');
+      throw new Error("Usuario no autenticado");
     }
 
     const report = {
@@ -71,30 +72,30 @@ export const saveIncidentReport = async (
     };
 
     // Guardar en Firestore
-    const docRef = await firestore().collection('incident_reports').add(report);
+    const docRef = await firestore().collection("incident_reports").add(report);
 
-    console.log('Reporte guardado en Firestore con ID:', docRef.id);
+    console.log("Reporte guardado en Firestore con ID:", docRef.id);
 
     // Opcionalmente sincronizar con Google Sheets
     if (syncToSheets) {
       try {
         const { saveReportToGoogleSheets } = await import(
-          './googleSheetsService'
+          "./googleSheetsService"
         );
         await saveReportToGoogleSheets({
           ...reportData,
           userEmail: user.email,
         });
-        console.log('Reporte también guardado en Google Sheets');
+        console.log("Reporte también guardado en Google Sheets");
       } catch (sheetsError) {
-        console.warn('Error sincronizando con Google Sheets:', sheetsError);
+        console.warn("Error sincronizando con Google Sheets:", sheetsError);
         // No fallar si Google Sheets falla, el reporte ya está en Firestore
       }
     }
 
     return docRef.id;
   } catch (error) {
-    console.error('Error al guardar el reporte:', error);
+    console.error("Error al guardar el reporte:", error);
     throw error;
   }
 };
@@ -104,23 +105,23 @@ export const getUserReports = async () => {
   try {
     const user = getCurrentUser();
     if (!user) {
-      throw new Error('Usuario no autenticado');
+      throw new Error("Usuario no autenticado");
     }
 
     const snapshot = await firestore()
-      .collection('incident_reports')
-      .where('userId', '==', user.uid)
-      .orderBy('createdAt', 'desc')
+      .collection("incident_reports")
+      .where("userId", "==", user.uid)
+      .orderBy("createdAt", "desc")
       .get();
 
-    const reports = snapshot.docs.map(doc => ({
+    const reports = snapshot.docs.map((doc) => ({
       id: doc.id,
       ...doc.data(),
     }));
 
     return reports;
   } catch (error) {
-    console.error('Error al obtener reportes:', error);
+    console.error("Error al obtener reportes:", error);
     throw error;
   }
 };
@@ -128,12 +129,12 @@ export const getUserReports = async () => {
 // Función para actualizar un reporte existente
 export const updateIncidentReport = async (
   reportId: string,
-  reportData: any,
+  reportData: any
 ) => {
   try {
     const user = getCurrentUser();
     if (!user) {
-      throw new Error('Usuario no autenticado');
+      throw new Error("Usuario no autenticado");
     }
 
     const updatedReport = {
@@ -142,14 +143,14 @@ export const updateIncidentReport = async (
     };
 
     await firestore()
-      .collection('incident_reports')
+      .collection("incident_reports")
       .doc(reportId)
       .update(updatedReport);
 
-    console.log('Reporte actualizado:', reportId);
+    console.log("Reporte actualizado:", reportId);
     return reportId;
   } catch (error) {
-    console.error('Error al actualizar el reporte:', error);
+    console.error("Error al actualizar el reporte:", error);
     throw error;
   }
 };
@@ -159,15 +160,15 @@ export const deleteIncidentReport = async (reportId: string) => {
   try {
     const user = getCurrentUser();
     if (!user) {
-      throw new Error('Usuario no autenticado');
+      throw new Error("Usuario no autenticado");
     }
 
-    await firestore().collection('incident_reports').doc(reportId).delete();
+    await firestore().collection("incident_reports").doc(reportId).delete();
 
-    console.log('Reporte eliminado:', reportId);
+    console.log("Reporte eliminado:", reportId);
     return true;
   } catch (error) {
-    console.error('Error al eliminar el reporte:', error);
+    console.error("Error al eliminar el reporte:", error);
     throw error;
   }
 };
@@ -183,10 +184,10 @@ export const uploadImage = async (imageUri: string, fileName: string) => {
     // const downloadURL = await reference.getDownloadURL();
     // return downloadURL;
 
-    console.log('Función de subida de imagen - requiere Firebase Storage');
+    console.log("Función de subida de imagen - requiere Firebase Storage");
     return imageUri; // Por ahora devuelve la URI local
   } catch (error) {
-    console.error('Error al subir imagen:', error);
+    console.error("Error al subir imagen:", error);
     throw error;
   }
 };
